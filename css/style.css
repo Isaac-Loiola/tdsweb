@@ -1,0 +1,13 @@
+ body{
+    background-color: rgb(32, 32, 32);
+    color: aliceblue;
+}
+
+h1{
+    color: aliceblue;
+    text-align: center;
+}
+#imagem-isaac{
+    border: 1px solid transparent;
+    border-radius: 10px;
+}
