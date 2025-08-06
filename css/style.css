@@ -3,7 +3,9 @@
 /* Importa a fonte simples */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-
+html{
+    scroll-behavior: smooth;
+}
 /* Tipografia Global  */
 body{
     font-family: 'Roboto', 'sans-serif'; /* Aplica a fonte Roboto */
@@ -173,4 +175,70 @@ footer{
     color: #fff;
     text-align: center;
     padding: 2rem 0;
+}
+
+footer .container{
+    background-color: #34495e;
+    display: flex; /*permite flex box */
+    flex-wrap: wrap; /* permite que o itens quebrem linha */
+    justify-content: space-around; /* espaçamento uniforme entre os itens */
+    align-items: flex-start;
+    text-align: left; /* alinha o texto a esquerda */
+}
+
+footer localizacao, footer .mapa-container{
+    flex-basis: 45%; /* define a largura base para os dois itens por linha */
+    max-width: 45%; /* define uma largura máxima */
+    margin-bottom: 1.5rem; /* espaçamento inferior */
+    box-sizing: border-box; /* inclui padding e borda na largura total */
+}
+
+footer .localizacao p, 
+footer .localizacao address{
+    margin-bottom: 10px;
+}
+
+footer #redes-sociais{
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+footer #redes-sociais li {
+   margin-bottom: 8px;
+}
+
+footer #redes-sociais a{
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    display: flex; /* alinha icone e text */
+    align-items: center;
+}
+
+footer #redes-sociais a:hover{
+    color: #1abc9c;
+}
+
+footer #redes-sociais a img{
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+footer .mapa-container iframe{
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.copyrigth{
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba( 255,255,255 0.1);
+    font-size: 0.85rem;
+    text-align: center;
+    width: 100%;
 }
